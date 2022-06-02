@@ -1,0 +1,15 @@
+    <h1>Series:</h1> 
+    <div class="slider">
+        <div class="card" *ngFor="let serie of series">
+            <img (click)="goToDetail(serie)" class="imgTest" src={{serie.thumbnail}} alt=""/>
+        </div>
+    </div>
+
+    <h1>Films:</h1>
+    <div class="slider">
+        <div class="card" *ngFor="let film of films">
+            <img (click)="goToDetail(film)" class="imgTest" src={{film.thumbnail}} alt=""/>
+        </div>
+    </div>
+    
+    <app-footer></app-footer>
