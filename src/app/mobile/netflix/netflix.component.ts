@@ -1,8 +1,9 @@
-import { Film } from './../interfaces/film';
-import { Serie } from './../interfaces/serie';
+import { Film } from '../interfaces/film';
+import { Serie } from '../interfaces/serie';
 import { Component, OnInit } from '@angular/core';
 import { SwiperComponent } from "swiper/angular";
 import { Router } from '@angular/router';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 // import Swiper core and required modules
 import SwiperCore , {
@@ -40,7 +41,12 @@ export class NetflixComponent implements OnInit {
   series: Serie[] = []
   films: Film[] = []
 
-  constructor(private router: Router) {
+  mobile = false
+
+  constructor(private router: Router,private deviceService: DeviceDetectorService) {
+
+    this.mobile = this.deviceService.isMobile()
+    console.log(this.mobile)
 
     this.series.push({
       idFilm: this.series.length,

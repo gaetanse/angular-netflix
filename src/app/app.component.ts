@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'netflix-mobile';
+  mobile = false;
+  
+  constructor(private deviceService: DeviceDetectorService) {
+    this.mobile = this.deviceService.isMobile()
+  }
 }

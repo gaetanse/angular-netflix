@@ -4,13 +4,12 @@ import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NetflixComponent } from './netflix/netflix.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { NetflixComponent } from './mobile/netflix/netflix.component';
+import { NavbarComponent } from './mobile/navbar/navbar.component';
+import { FooterComponent } from './mobile/footer/footer.component';
 
 import { RouterModule } from '@angular/router';
-import { TestComponent } from './test/test.component';
-import { DetailComponent } from './detail/detail.component';
+import { DetailComponent } from './mobile/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { DetailComponent } from './detail/detail.component';
     NetflixComponent,
     NavbarComponent,
     FooterComponent,
-    TestComponent,
     DetailComponent
   ],
   imports: [
