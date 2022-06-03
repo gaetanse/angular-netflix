@@ -1,7 +1,6 @@
 import { Film } from '../interfaces/film';
 import { Serie } from '../interfaces/serie';
 import { Component, OnInit } from '@angular/core';
-import { SwiperComponent } from "swiper/angular";
 import { Router } from '@angular/router';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
@@ -41,13 +40,8 @@ export class NetflixComponent implements OnInit {
   series: Serie[] = []
   films: Film[] = []
 
-  mobile = false
-
-  constructor(private router: Router,private deviceService: DeviceDetectorService) {
-
-    this.mobile = this.deviceService.isMobile()
-    console.log(this.mobile)
-
+  constructor(private router: Router) {
+    
     this.series.push({
       idFilm: this.series.length,
       title: "titre 1",

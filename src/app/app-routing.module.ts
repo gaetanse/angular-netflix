@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NetflixComponent } from './mobile/netflix/netflix.component';
-import { DetailComponent } from './mobile/detail/detail.component';
+import { NetflixComponent } from './netflix/netflix.component';
+import { DetailComponent } from './detail/detail.component';
 
 const routes: Routes = [
   { path: '', component: NetflixComponent, },
