@@ -6,12 +6,15 @@
 }
 .imgTest{
     height: 200px;
-    width: 200px;
+    width: 400px;
 }
 .slider{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    font-family: sans-serif;
+    scroll-snap-type: x mandatory;	
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    touch-action: manipulation;
 }
 /* Mobile */
 @media (hover: none) {
