@@ -9,7 +9,7 @@ img{
     background-color: red;
 }
 /* Mobile */
-@media (hover: hover) {
+@media (hover: none) {
     img{
         width: 50px;
     }

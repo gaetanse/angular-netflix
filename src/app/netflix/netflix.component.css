@@ -1,37 +1,29 @@
-/* Destkop */
+/* Destkop */ 
 .card {
-    background-color: blue;
+    color: white;
+    padding: 1rem;
+    height: 200px;
 }
-
-.cards {
-}
-
 .imgTest{
+    height: 200px;
+    width: 200px;
 }
-
 .slider{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
 }
 /* Mobile */
-@media (hover: hover) {
+@media (hover: none) {
     .card {
         color: white;
         padding: 1rem;
         height: 100px;
     }
-    
-    .cards {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-    }
-    
     .imgTest{
         width: 85px;
         height: 100px;
     }
-    
     .slider{
         font-family: sans-serif;
         scroll-snap-type: x mandatory;	
@@ -40,3 +32,16 @@
         overflow-x: scroll;
     }
 }
+/*.card {
+    color: white;
+    padding: 1rem;
+    height: 100px;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+}*/
